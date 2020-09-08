@@ -1,9 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-word/node_modules
-word/.pnp
-word/.pnp.js
+/node_modules
+/.pnp
+.pnp.js
 
 # testing
 /coverage
@@ -21,4 +21,4 @@ word/.pnp.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.vscode
+.vscode/
