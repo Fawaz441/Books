@@ -12,7 +12,7 @@ class BookSerializer(ModelSerializer):
     author_obj = SerializerMethodField()
     class Meta:
         model = Book
-        fields = ('title','author','published_date','id','author_obj','slug')
+        fields = ('title','author','published_date','id','author_obj','slug','image', 'price')
 
     def get_author(self,obj):
         return obj.author.first_name + ' ' + obj.author.last_name

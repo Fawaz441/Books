@@ -22,6 +22,9 @@ class Book(models.Model):
     author = models.ForeignKey(Author,on_delete=models.CASCADE)
     published_date = models.DateField() 
     slug = models.SlugField(blank=True,null=True)
+    image = models.ImageField(null=True,blank=True)
+    price = models.FloatField()
+    discount = models.FloatField(null=True,blank=True)
 
     def save(self,*args, **kwargs):
         self.slug = slugify(self.title)
